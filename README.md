@@ -4,8 +4,10 @@ This is a simple REST API project using NodeJS.
 ## Table of Content
 * [Prerequisite](#prerequisite)
 * [Getting started](#getting-started)
+* [Localhost server](#localhost-server)
 * [APIs endpoint](#apis-endpoint)
-* [Docker Image](#apis-endpoint)
+* [Docker Image](#docker-image)
+* [Docker Container in localhost](#docker-container-in-localhost)
 
 ## Prerequisite
 
@@ -20,6 +22,14 @@ This is a NodeJS project. To get started, first install all the packages by runn
 
 ```shell
 npm i
+```
+
+## Localhost server
+
+To start the localhost server.
+
+```shell
+npm run start
 ```
 
 ## APIs endpoint
@@ -38,11 +48,21 @@ npm run test
 
 DockerHub link of this project [yusufshakeel/simple-restapi-nodejs](https://hub.docker.com/r/yusufshakeel/simple-restapi-nodejs)
 
-To pull the image on your localhost and to run the container.
+To pull the image on your localhost.
 
 ```shell
 docker pull yusufshakeel/simple-restapi-nodejs
 ```
+
+## Docker Container in localhost
+
+To run the docker container in localhost.
+
+```shell
+docker run -d yusufshakeel/simple-restapi-nodejs
+```
+
+This will start the server on port 3000.
 
 ## License
 
