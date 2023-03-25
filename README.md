@@ -36,7 +36,7 @@ npm run test
 
 ## Docker Image
 
-To DockerHub link of this project [yusufshakeel/simple-restapi-nodejs](https://hub.docker.com/r/yusufshakeel/simple-restapi-nodejs)
+DockerHub link of this project [yusufshakeel/simple-restapi-nodejs](https://hub.docker.com/r/yusufshakeel/simple-restapi-nodejs)
 
 To pull the image on your localhost and to run the container.
 
