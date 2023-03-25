@@ -19,7 +19,7 @@
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "Home",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
