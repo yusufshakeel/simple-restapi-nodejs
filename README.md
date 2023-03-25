@@ -2,9 +2,11 @@
 This is a simple REST API project using NodeJS.
 
 ## Table of Content
+* [Prerequisite](#prerequisite)
+* [Getting started](#getting-started)
+* [APIs endpoint](#apis-endpoint)
 
-
-## Prerequisites
+## Prerequisite
 
 This project depends on the following.
 
@@ -19,7 +21,7 @@ This is a NodeJS project. To get started, first install all the packages by runn
 npm i
 ```
 
-## Api endpoints
+## APIs endpoint
 
 Check out the `docs` folder. It has the Postman collection.
 
@@ -30,3 +32,13 @@ To run the test suite.
 ```shell
 npm run test
 ```
+
+## License
+
+It's free :smiley:
+
+[MIT License](https://github.com/yusufshakeel/simple-restapi-nodejs/blob/main/LICENSE) Copyright (c) 2023 Yusuf Shakeel
+
+## Donate
+
+Feeling generous :smiley: [Donate via PayPal](https://www.paypal.me/yusufshakeel)
