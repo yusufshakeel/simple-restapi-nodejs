@@ -83,7 +83,7 @@ docker pull yusufshakeel/simple-restapi-nodejs
 To run the docker container in localhost.
 
 ```shell
-docker run -d yusufshakeel/simple-restapi-nodejs
+docker run -d -p 3000:3000 yusufshakeel/simple-restapi-nodejs
 ```
 
 This will start the server on port 3000.
