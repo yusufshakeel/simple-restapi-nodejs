@@ -5,7 +5,7 @@ This is a simple REST API project using NodeJS.
 * [Prerequisite](#prerequisite)
 * [Getting started](#getting-started)
 * [Localhost server](#localhost-server)
-* [APIs endpoint](#apis-endpoint)
+* [API endpoints](#api-endpoints)
 * [Docker Image](#docker-image)
 * [Docker Container in localhost](#docker-container-in-localhost)
 
@@ -32,9 +32,33 @@ To start the localhost server.
 npm run start
 ```
 
-## APIs endpoint
+## API endpoints
 
 Check out the `docs` folder. It has the Postman collection.
+
+Home
+```
+GET /
+Host: 0.0.0.0:3000
+```
+
+Liveness
+```
+GET /liveness
+Host: 0.0.0.0:3000
+```
+
+Readiness
+```
+GET /readiness
+Host: 0.0.0.0:3000
+```
+
+Metrics
+```
+GET /metrics
+Host: 0.0.0.0:3000
+```
 
 ## Tests
 
