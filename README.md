@@ -5,6 +5,7 @@ This is a simple REST API project using NodeJS.
 * [Prerequisite](#prerequisite)
 * [Getting started](#getting-started)
 * [APIs endpoint](#apis-endpoint)
+* [Docker Image](#apis-endpoint)
 
 ## Prerequisite
 
@@ -31,6 +32,16 @@ To run the test suite.
 
 ```shell
 npm run test
+```
+
+## Docker Image
+
+To DockerHub link of this project [yusufshakeel/simple-restapi-nodejs](https://hub.docker.com/r/yusufshakeel/simple-restapi-nodejs)
+
+To pull the image on your localhost and to run the container.
+
+```shell
+docker pull yusufshakeel/simple-restapi-nodejs
 ```
 
 ## License
