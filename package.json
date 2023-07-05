@@ -33,6 +33,8 @@
   "dependencies": {
     "@fastify/cors": "^8.2.1",
     "@fastify/helmet": "^10.1.0",
+    "@fastify/swagger": "^8.7.0",
+    "@fastify/swagger-ui": "^1.9.2",
     "config": "^3.3.9",
     "fastify": "^4.15.0",
     "fastify-metrics": "^10.2.0"

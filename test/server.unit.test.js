@@ -17,11 +17,13 @@ describe('Testing Server', () => {
       test('Should be able to start server', async () => {
         const fastify = {
           register: jest.fn(),
-          listen: jest.fn((option, cb) => cb())
+          listen: jest.fn((option, cb) => cb()),
+          swagger: jest.fn()
         };
         const server = await new Server({ fastify }).setup();
         await server.start();
         expect(fastify.listen).toHaveBeenCalledTimes(1);
+        expect(fastify.swagger).toHaveBeenCalledTimes(1);
       });
     });
 

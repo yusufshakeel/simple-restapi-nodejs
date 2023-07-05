@@ -1,6 +1,6 @@
 fileignoreconfig:
 - filename: package-lock.json
-  checksum: 2f4a335cb17f033d7bd3cd9f2196547aad42233710880cd1fedbdb4e4626ac2d
+  checksum: cff1c08ca0057570c1f58d519b94fed3e5a7fd5365a6698dd4d8e9b4acd7834e
 - filename: docs/Simple Rest API Nodejs.postman_environment.json
   checksum: 379cc3ca107270652eff5aaf4b264f714f1b1b801daea6dba3c8df411abe6cdc
 - filename: docs/Simple Rest API Nodejs.postman_collection.json
