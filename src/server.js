@@ -1,9 +1,12 @@
 'use strict';
 const fastifyCors = require('@fastify/cors');
 const fastifyHelmet = require('@fastify/helmet');
+const fastifySwagger = require('@fastify/swagger');
+const fastifySwaggerUI = require('@fastify/swagger-ui');
 const fastifyMetrics = require('fastify-metrics');
 const Services = require('./services');
 const corsConfig = require('./configs/cors-config');
+const swaggerConfig = require('./configs/swagger-config');
 const Routes = require('./routes');
 
 module.exports = function Server({ fastify }) {
@@ -12,6 +15,8 @@ module.exports = function Server({ fastify }) {
   const routes = Routes({ fastify });
 
   this.setup = async () => {
+    await fastify.register(fastifySwagger, swaggerConfig);
+    await fastify.register(fastifySwaggerUI);
     await fastify.register(fastifyCors, corsConfig);
     await fastify.register(fastifyHelmet);
     await fastify.register(fastifyMetrics, { endpoint: '/metrics' });
@@ -31,6 +36,7 @@ module.exports = function Server({ fastify }) {
         fastify.log.error(err);
         throw err;
       }
+      fastify.swagger();
     });
   };
 };
